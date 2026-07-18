@@ -43,7 +43,7 @@ export default function Layout() {
               </div>
             </div>
 
-            <nav className="flex min-w-0 flex-1 items-center gap-0.5 overflow-x-auto rounded-full bg-white/5 px-2 py-1 scrollbar-none">
+            <nav className="flex min-w-0 flex-1 flex-nowrap items-center gap-0.5 overflow-x-auto rounded-full bg-white/5 px-2 py-1 scrollbar-none">
               {navItems.map((item) => (
                 <TopNavLink
                   key={item.to}
