@@ -1,15 +1,17 @@
-# Python virtual environment
-.venv/
-
-# Python cache
-__pycache__/
-*.py[cod]
-
-# Environment variables
+node_modules/
 .env
-
-# macOS
+*.log
 .DS_Store
 
-# Node
-frontend/node_modules/
+# Python / FastAPI
+venv/
+__pycache__/
+*.pyc
+
+# Vite build output
+dist/
+
+# Uploaded files
+backend/uploads/products/*
+!backend/uploads/products/.gitkeep
+!backend/uploads/.gitkeep

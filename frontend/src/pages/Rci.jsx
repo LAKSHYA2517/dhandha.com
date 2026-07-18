@@ -69,7 +69,7 @@ export default function Rci() {
     }
   }
 
-  if (loading) return <p>Loadingâ€¦</p>
+  if (loading) return <p>Loading…</p>
 
   if (!company) {
     return <p className="text-gray-400">Create a company profile first to calculate an RCI score.</p>
@@ -143,7 +143,7 @@ export default function Rci() {
           disabled={calculating}
           className="w-full rounded-full bg-white py-2 font-semibold text-gray-900 transition hover:bg-white/90 disabled:opacity-50"
         >
-          {calculating ? 'Running compliance checkâ€¦' : 'Run Compliance Check'}
+          {calculating ? 'Running compliance check…' : 'Run Compliance Check'}
         </button>
       </form>
     </div>

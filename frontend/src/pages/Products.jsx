@@ -68,7 +68,7 @@ export default function Products() {
     }
   }
 
-  if (loading) return <p>Loadingâ€¦</p>
+  if (loading) return <p>Loading…</p>
 
   return (
     <div className="max-w-5xl">
@@ -102,7 +102,7 @@ export default function Products() {
           disabled={saving}
           className="sm:col-span-2 w-full rounded-full bg-white py-2 font-semibold text-gray-900 transition hover:bg-white/90 disabled:opacity-50"
         >
-          {saving ? 'Listingâ€¦' : 'List Product'}
+          {saving ? 'Listing…' : 'List Product'}
         </button>
 
         <p className="sm:col-span-2 text-xs text-gray-400">
@@ -123,7 +123,7 @@ export default function Products() {
               <div className="flex items-start justify-between">
                 <div>
                   <p className="font-medium">{p.name}</p>
-                  <p className="text-sm text-gray-400">{p.category || 'â€”'}</p>
+                  <p className="text-sm text-gray-400">{p.category || '—'}</p>
                 </div>
                 <button onClick={() => handleDelete(p._id)} className="text-sm text-red-300 transition hover:text-red-200">
                   Remove
